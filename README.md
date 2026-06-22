@@ -1,80 +1,69 @@
-## Hi there 👋
-
 # Martina Simoni
 
-Architect, Building Engineer and AI researcher. Master in AI for Architecture and the Built Environment, IAAC Barcelona. 5+ years of architectural practice in Italy and the Netherlands.
+**Architect · Building Engineer · AI Researcher**
 
-I design and build AI/ML tools that address real problems in the built environment — from construction coordination and upfront carbon assessment to crowd safety, thermal comfort, urban walkability, and biodiversity mapping. My work sits at the intersection of spatial thinking and machine learning: I bring an architect's understanding of buildings, cities and ecosystems to every tool I build.
+I spent 5 years in Dutch architecture firms designing buildings. Then I realised the most interesting problems weren't on the drawing board — they were in the gap between what architects know and what the tools can do. So I went back to school (IAAC Barcelona) and spent a year building AI tools to close that gap.
+
+Turns out you can train models on 1,691 buildings, route pedestrians through the coolest streets in Vienna, automate the part of a project manager's day they hate most, and predict crowd stampede risk from a satellite image. Who knew.
+
+Now I sit somewhere between architect and developer — which means I'm too technical for most architecture offices and too obsessed with buildings for most tech companies. I consider this a feature, not a bug.
 
 ---
 
-## Projects
+## What I've built
 
 | Project | What it does | Stack |
 |---------|-------------|-------|
-| [GigAI](https://github.com/martinasimoni-dotcom/gigai) | Event-driven AI automation for construction coordination. Reads RFIs from Autodesk Construction Cloud, generates structured change proposals in under 3 minutes. 99% time reduction validated with 15 PMs. | Python · FastAPI · Claude AI (Haiku + Sonnet) · ACC API · PostgreSQL · React · Revit .NET (C#) · WebSockets |
-| [Treeat](https://github.com/martinasimoni-dotcom/Treeat) | Urban thermal comfort tool — draw any city district, get a UTCI heatmap, optimise tree planting by cooling ROI per euro, find the coolest pedestrian route. Built at Infrared.city SDK Hackathon. Live at treeat.vercel.app | Python · FastAPI · OSMnx · Infrared SDK (UTCI) · React · SQLAlchemy · Neon Postgres · Railway · Vercel |
-| [Disperse](https://github.com/martinasimoni-dotcom/disperse) | Crowd risk estimation from satellite imagery. Draw obstructions (focal points, vehicles, barriers) on any map location — AI generates a pedestrian density heatmap. No sensors or field data required. | Python · FastAPI · Keras · TensorFlow · U-Net · React · Mapbox GL JS · OpenCV · NumPy |
-| SURROUND | Upfront carbon assessment tool for early design stages. Scans 1,691 buildings in Barcelona 22@ district via ML correlation matrix. Rhino plugin syncs active model to web dashboard — Speckle-style, one click. | Python · GIS · GeoPandas · Mapbox · ML · Rhino Plugin (.NET) · React |
-| Bloom Brick | Parametric scored bricks for site-ready masonry walls. Grasshopper generates per-brick placement angle data; Speckle syncs geometry version-controlled to CNC fabrication. Precision transfers from digital model to factory — any mason can build it. | Grasshopper · Rhino · Speckle · CNC fabrication data |
-| ArchiMesa | Real-time tangible collaborative design table. Place LEGO blocks on a 3D-printed city base — depth camera reads geometry, projector overlays solar, shadow and wind analysis in real time. | Python · OpenNI2 · Orbbec Astra · Grasshopper · ArUco markers · HD projector |
-| Compl-AI | Multi-model AI pipeline for predicting building-code compliance in residential construction. Integrates project data (ANN risk score) and site imagery (CNN + Object Detection) into a unified K-Means risk classification. | Python · ANN · CNN · Object Detection · K-Means · IfcOpenShell |
-| G.R.A.S.S. | Hands-free urban park design via mid-air gestures and voice commands. Place, rotate and scale urban furniture in real space without touching a screen. | Python · MediaPipe · Google Speech API · Pygame · homography |
-| Urban Amenities — Istanbul | 15-minute city walkability mapping. Computational analysis of amenity distribution and shortest pedestrian routes across Istanbul's historical centre. | Grasshopper · OpenStreetMap · Shortest Walk algorithm · grid analysis |
-| Flap-alona | Butterfly and pollinator mapping across Barcelona's gardens. Spatial tool for biodiversity-aware urban green planning, connecting pollinator presence to garden-level design decisions. | Python · urban data analysis · open datasets |
-| ComforTECH | Real-time intelligent environmental control system. Sensors monitor temperature, humidity, light and occupancy — ESP32 adapts fan, lighting and display automatically in response to changing conditions. | ESP32 · Arduino · DHT11 · PIR · LDR sensors · circuit design |
+| [GigAI](https://github.com/martinasimoni-dotcom/gigai) | Project managers spend 45 minutes per RFI doing coordination work a machine could do in 30 seconds. GigAI reads the RFI, generates a full proposal, and waits for a human to tap approve. 99% time reduction. Validated with 15 PMs (including one from MVRDV). | Python · FastAPI · Claude AI · ACC API · PostgreSQL · React · Revit .NET |
+| [Treeat](https://github.com/martinasimoni-dotcom/Treeat) | Cities are getting hotter. Treeat simulates street-level heat (UTCI) for any district, finds where trees cool the most per euro spent, and routes pedestrians home through the shadiest streets. No LiDAR. No expensive data. Built in 48 hours. Live at treeat.vercel.app | Python · FastAPI · OSMnx · Infrared SDK · React · Neon Postgres |
+| [Disperse](https://github.com/martinasimoni-dotcom/disperse) | 80 people died at Maha Kumbh Mela in 2025. Disperse lets you click any location on a satellite map, draw crowd obstructions, and get an AI-generated density heatmap. No sensors. No field data. Just a map and two Keras models. | Python · FastAPI · Keras · TensorFlow · U-Net · React · Mapbox · OpenCV |
+| SURROUND | 70% of design decisions that affect a building's carbon are made at the concept stage — when nobody's running a carbon analysis. SURROUND does it automatically: upload your Rhino model, it scans 1,691 surrounding buildings and tells you your upfront carbon before you've even picked a material. | Python · GIS · ML · Mapbox · Rhino Plugin · React |
+| Bloom Brick | Parametric brick walls look great in Grasshopper. They're nearly impossible to build on site because every brick sits at a different angle and 92% of firms can't find workers who can read that. Bloom Brick puts the angle into the brick itself — factory-scored, mason-proof. | Grasshopper · Rhino · Speckle · CNC |
+| ArchiMesa | A table with a depth camera and a projector. You put LEGO blocks on a 3D-printed city model. It projects solar, shadow and wind analysis directly onto the physical model in real time. Clients love it. Detection was hard. We tried 5 different approaches. 4 failed. | Python · OpenNI2 · Orbbec Astra · Grasshopper · ArUco |
+| Compl-AI | Checks whether a residential building complies with building codes using AI. Because apparently someone needs to. | Python · ANN · CNN · Object Detection · K-Means · IFC |
+| G.R.A.S.S. | Design a park with your hands. No mouse. No keyboard. Just gestures and voice commands in mid-air. The name is a backronym. We are not sorry. | Python · MediaPipe · Google Speech API · Pygame |
+| Urban Amenities — Istanbul | Is Istanbul actually a 15-minute city? We mapped every amenity, ran shortest-walk algorithms across the historical centre, and found out. All in Grasshopper. | Grasshopper · OSM · Shortest Walk |
+| Flap-alona | Butterfly and pollinator mapping across Barcelona's gardens. Because biodiversity matters and someone should be counting the butterflies. | Python · urban data · open datasets |
+| ComforTECH | A room that adjusts itself. Temperature, humidity, light, occupancy — ESP32 reads all of it and responds. Hardware is harder than it looks. | ESP32 · Arduino · sensors · circuit design |
 
 ---
 
 ## Skills
 
-**AI / ML** — Python · TensorFlow · Keras · scikit-learn · LLM orchestration (Claude API · Haiku + Sonnet) · RAG · ANN · CNN · Object Detection · K-Means · ML pipelines
+**AI / ML** — Python · TensorFlow · Keras · scikit-learn · Claude API (Haiku + Sonnet) · RAG · ANN · CNN · Object Detection · K-Means
 
-**Computer Vision** — OpenCV · depth cameras · ArUco markers · semantic segmentation · U-Net · Roboflow
+**Computer Vision** — OpenCV · depth cameras · ArUco markers · U-Net segmentation
 
-**Backend** — FastAPI · PostgreSQL · pgvector · WebSockets · REST APIs · SQLAlchemy · Google Cloud · Railway
+**Backend** — FastAPI · PostgreSQL · WebSockets · REST APIs · SQLAlchemy · Google Cloud · Railway
 
-**Frontend** — React · Vite · Mapbox GL JS · React Konva · JavaScript
+**Frontend** — React · Vite · Mapbox GL JS · JavaScript
 
-**BIM / Fabrication** — Revit · Revit API (.NET / C#) · IFC · IfcOpenShell · Grasshopper · Rhino · Speckle · CNC data pipelines
+**BIM / Fabrication** — Revit · Revit API (.NET / C#) · IFC · IfcOpenShell · Grasshopper · Rhino · Speckle
 
-**Geospatial** — GIS · GeoPandas · PostGIS · OSMnx · OpenStreetMap · UTCI simulation · Ladybug Tools · Honeybee · Infrared SDK
+**Geospatial** — GIS · GeoPandas · OSMnx · UTCI simulation · Ladybug · Honeybee · Infrared SDK
 
-**Hardware** — ESP32 · Arduino · sensor integration · circuit design · physical computing · depth cameras
+**Hardware** — ESP32 · Arduino · sensor integration · circuit design
 
 **Design** — AutoCAD · SketchUp · Enscape · V-Ray · InDesign · Photoshop · Illustrator
 
 ---
 
-## Education
+## Before all this
 
-**Master in AI for Architecture and the Built Environment**
-IAAC — Institute for Advanced Architecture of Catalonia, Barcelona · 2024–2026
+5 years delivering actual buildings in the Netherlands and Italy:
 
-**Integrated Master in Architecture and Building Engineering**
-Università degli Studi di L'Aquila · 2013–2020 · 110/110 cum laude
+- **Studio for New Realities** (Rotterdam, 2024–2025) — Residential projects + 15-minute city research for Brussels
+- **LAP Landscape & Urban Design** (Rotterdam, 2023) — Led design for De Groene Loper: 92 climate-adaptive homes with smart water management and biodiversity integration
+- **Burton Hamfelt Urban Architecture** (Amsterdam, 2021–2023) — De Optopper modular prefab system (exhibited Provada 2022) + Peninsula Wasserstadt masterplan, Hannover
+- **Maria Grazia D'Ascanio Ingegneria** (L'Aquila, 2020–2021) — Energy and seismic renovation of social housing in a post-earthquake zone
 
-**Erasmus+ Program**
-Politechnika Krakowska, Poland · 2019–2020
-Thesis: Urban mending and protection strategies — Wesoła district, Kraków
+**Education:**
+Integrated Master in Architecture and Building Engineering — Università degli Studi di L'Aquila · 110/110 cum laude
+Master in AI for Architecture and the Built Environment — IAAC Barcelona · 2024–2026
+Erasmus+ — Politechnika Krakowska, Poland · 2019–2020
 
 ---
 
-## Contact
+## Find me
 
-[LinkedIn](https://linkedin.com/in/martina-simoni) · Barcelona, Spain · martina.simoni20@gmail.com
-
-<!--
-**martinasimoni-dotcom/martinasimoni-dotcom** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+📧 martina.simoni20@gmail.com · 📍 Barcelona, Spain · [LinkedIn](https://linkedin.com/in/martina-simoni)
