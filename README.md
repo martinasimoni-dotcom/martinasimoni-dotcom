@@ -15,10 +15,9 @@ Now I sit somewhere between architect and developer — which means I'm too tech
 | Project | What it does | Stack |
 |---------|-------------|-------|
 | [GigAI](https://github.com/martinasimoni-dotcom/gigai) | Project managers spend 45 minutes per RFI doing coordination work a machine could do in 30 seconds. GigAI reads the RFI, generates a full proposal, and waits for a human to tap approve. 99% time reduction. Validated with 15 PMs (including one from MVRDV). | Python · FastAPI · Claude AI · ACC API · PostgreSQL · React · Revit .NET |
+| [Delta Carbon](https://github.com/martinasimoni-dotcom/Delta-Carbon_upfront-carbon-tool) | 70% of decisions that affect a building's carbon happen at the massing stage — before anyone runs a carbon tool. Delta Carbon fixes this: type one command in Rhino, get your upfront carbon (A1–A4) broken down by element, AI-generated lower-carbon alternatives from BEDEC/ITeC, supplier matching with transport emissions, and a downloadable carbon passport. Before any structural decision is locked in. | Python · FastAPI · Claude AI (Sonnet) · React · Rhino Plugin (C#) · BEDEC/ITeC · Google Maps API · Mapbox · Three.js |
 | [Treeat](https://github.com/martinasimoni-dotcom/Treeat) | Cities are getting hotter. Treeat simulates street-level heat (UTCI) for any district, finds where trees cool the most per euro spent, and routes pedestrians home through the shadiest streets. No LiDAR. No expensive data. Built in 48 hours. Live at treeat.vercel.app | Python · FastAPI · OSMnx · Infrared SDK · React · Neon Postgres |
 | [Disperse](https://github.com/martinasimoni-dotcom/disperse) | 80 people died at Maha Kumbh Mela in 2025. Disperse lets you click any location on a satellite map, draw crowd obstructions, and get an AI-generated density heatmap. No sensors. No field data. Just a map and two Keras models. | Python · FastAPI · Keras · TensorFlow · U-Net · React · Mapbox · OpenCV |
-| DELTA CARBON | (https://github.com/martinasimoni-dotcom/Delta-Carbon_upfront-carbon-tool) About
-Early-stage embodied carbon assessment tool for architects. Connects to Rhino at the massing stage, retrieves live EPD data from verified Spanish databases, and uses AI to suggest lower-carbon materials. Includes A1–A3 manufacturing carbon + A4 transport impact via supplier location. Built at IAAC Barcelona, MaAI01 2026. | Python · GIS · ML · Mapbox · Rhino Plugin · React |
 | Bloom Brick | Parametric brick walls look great in Grasshopper. They're nearly impossible to build on site because every brick sits at a different angle and 92% of firms can't find workers who can read that. Bloom Brick puts the angle into the brick itself — factory-scored, mason-proof. | Grasshopper · Rhino · Speckle · CNC |
 | ArchiMesa | A table with a depth camera and a projector. You put LEGO blocks on a 3D-printed city model. It projects solar, shadow and wind analysis directly onto the physical model in real time. Clients love it. Detection was hard. We tried 5 different approaches. 4 failed. | Python · OpenNI2 · Orbbec Astra · Grasshopper · ArUco |
 | Compl-AI | Checks whether a residential building complies with building codes using AI. Because apparently someone needs to. | Python · ANN · CNN · Object Detection · K-Means · IFC |
@@ -31,15 +30,15 @@ Early-stage embodied carbon assessment tool for architects. Connects to Rhino at
 
 ## Skills
 
-**AI / ML** — Python · TensorFlow · Keras · scikit-learn · Claude API (Haiku + Sonnet) · RAG · ANN · CNN · Object Detection · K-Means
+**AI / ML** — Python · TensorFlow · Keras · scikit-learn · Claude API (Haiku + Sonnet) · RAG · ANN · CNN · Object Detection · K-Means · ML pipelines
 
 **Computer Vision** — OpenCV · depth cameras · ArUco markers · U-Net segmentation
 
 **Backend** — FastAPI · PostgreSQL · WebSockets · REST APIs · SQLAlchemy · Google Cloud · Railway
 
-**Frontend** — React · Vite · Mapbox GL JS · JavaScript
+**Frontend** — React · Vite · Mapbox GL JS · Three.js · TanStack Router · Zustand · JavaScript
 
-**BIM / Fabrication** — Revit · Revit API (.NET / C#) · IFC · IfcOpenShell · Grasshopper · Rhino · Speckle
+**BIM / Fabrication** — Revit · Revit API (.NET / C#) · Rhino · Rhino Plugin (C#) · IFC · IfcOpenShell · Grasshopper · Speckle · CNC data pipelines
 
 **Geospatial** — GIS · GeoPandas · OSMnx · UTCI simulation · Ladybug · Honeybee · Infrared SDK
 
