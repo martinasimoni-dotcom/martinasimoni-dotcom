@@ -2,11 +2,11 @@
 
 **Architect · Building Engineer · AI Researcher**
 
-I spent 5 years in Dutch architecture firms designing buildings. Then I realised the most interesting problems weren't on the drawing board — they were in the gap between what architects know and what the tools can do. So I went back to school (IAAC Barcelona) and spent a year building AI tools to close that gap.
+I spent 5 years in Dutch architecture firms designing buildings. Then I realised the most interesting problems weren't on the drawing board, they were in the gap between what architects know and what the tools can do. So I went back to school (IAAC Barcelona) and spent a year building AI tools to close that gap.
 
 Turns out you can train models on 1,691 buildings, route pedestrians through the coolest streets in Vienna, automate the part of a project manager's day they hate most, and predict crowd stampede risk from a satellite image. Who knew.
 
-Now I sit somewhere between architect and developer — which means I'm too technical for most architecture offices and too obsessed with buildings for most tech companies. I consider this a feature, not a bug.
+Now I sit somewhere between architect and developer, which means I'm too technical for most architecture offices and too obsessed with buildings for most tech companies. I consider this a feature, not a bug.
 
 ---
 
